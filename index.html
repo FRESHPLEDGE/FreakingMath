@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freaking Math</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <script src="app.js">
+    </script>
+    <link rel="shortcut icon" type="image/png" href="favicon.jpeg"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body ng-app="FreakingMathApp" ng-controller="GameController">
+<div class="numbers" style="margin-top:50px">
+    <div class="container">
+        <form id="form">
+            <div id="score-row" class="ng-cloak">
+                {{count}}
+            </div>
+            <label id="question" class="ng-cloak">{{number1}} + {{number2}} = {{result}}</label>
+            <div class="buttons ng-cloak">
+                <button class="check" ng-click="isTrue()"><i class="fas fa-check fa-3x"></i>
+
+                </button>
+                <button class="ex" ng-click="isFalse()"><i class="fas fa-times fa-3x"></i>
+
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
